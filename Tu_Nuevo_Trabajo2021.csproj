@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Administrador\Controllers\" />
+    <Folder Include="Areas\Administrador\Data\" />
+    <Folder Include="Areas\Administrador\Models\" />
+    <Folder Include="Areas\Administrador\Views\" />
+    <Folder Include="Areas\Empresa\Controllers\" />
+    <Folder Include="Areas\Empresa\Data\" />
+    <Folder Include="Areas\Empresa\Models\" />
+    <Folder Include="Areas\Empresa\Views\" />
+    <Folder Include="Areas\Postulante\Controllers\" />
+    <Folder Include="Areas\Postulante\Data\" />
+    <Folder Include="Areas\Postulante\Models\" />
+    <Folder Include="Areas\Postulante\Views\" />
+  </ItemGroup>
+
+</Project>
