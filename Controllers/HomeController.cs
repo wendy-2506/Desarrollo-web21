@@ -23,7 +23,7 @@ namespace Tu_Nuevo_Trabajo2021.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Grupo()
         {
             return View();
         }
