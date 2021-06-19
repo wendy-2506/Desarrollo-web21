@@ -1,0 +1,38 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Tu_Nuevo_Trabajo2021.Controllers
+{
+    public class Loginn : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Login(string email, string password)
+        {
+            if (email == "omartel@esan.edu.pe" && password == "aprobar123")
+            {
+                return RedirectToAction("Index", "Home", new { area = "Postulante" });
+            }
+            if (email == "wmendoza@esan.edu.pe" && password == "hola123")
+            {
+                return RedirectToAction("Index", "Home", new { area = "Empresa" });
+            }
+            if (email == "lvillacrez@esan.edu.pe" && password == "desweb21")
+            {
+                return RedirectToAction("Index", "Home", new { area = "Administrador" });
+            }
+            return View();
+        }
+    }
+}
