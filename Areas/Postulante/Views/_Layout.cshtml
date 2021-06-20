@@ -11,23 +11,20 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <img src="~/imagenes/logoweb.jpg" width="430" height="100">
-                @*<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Tu_Nuevo_Trabajo2021</a>*@
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                @*<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1" align="right">
-                        <li class="nav-item" >
-                            <a class="btn btn-primary" href="#" role="button">Ingresar</a>
-                        </li>
-                        <li class="nav-item">
-                            <button href="#" type="button" class="btn btn-link" align="right">Registrarse</button>
-                        </li>
-                    </ul>
-                </div>*@
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="~/imagenes/logoweb.jpg" width="380" height="80">
+                </a>
+                    @*<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Tu_Nuevo_Trabajo2021</a>*@
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <button href="../Views/Loginn/Login.cshtml" type="button" class="btn btn-link">Cerrar sesión</button>
+                    </li>
+                    @*<li class="nav-item">
+                        <a class="btn btn-primary" href="../Home/Index.cshtml" role="button">Ingresar</a>
+                    </li>*@
+                </ul>
+                    
             </div>
         </nav>
     </header>
