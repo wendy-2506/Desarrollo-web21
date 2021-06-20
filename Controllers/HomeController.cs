@@ -28,6 +28,12 @@ namespace Tu_Nuevo_Trabajo2021.Controllers
             return View();
         }
 
+        public IActionResult Ofertas()
+        {
+            var ofertas = new List<Oferta>();
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
