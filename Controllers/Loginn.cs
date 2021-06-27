@@ -34,5 +34,11 @@ namespace Tu_Nuevo_Trabajo2021.Controllers
             }
             return View();
         }
+
+
+        public IActionResult Olvidaste()
+        {
+            return View();
+        }
     }
 }
