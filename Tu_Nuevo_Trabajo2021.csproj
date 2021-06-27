@@ -22,6 +22,8 @@
     <Folder Include="Areas\Empresa\Models\" />
     <Folder Include="Areas\Postulante\Data\" />
     <Folder Include="Areas\Postulante\Models\" />
+    <Folder Include="Areas\Registro\Data\" />
+    <Folder Include="Areas\Registro\Models\" />
   </ItemGroup>
 
 </Project>
