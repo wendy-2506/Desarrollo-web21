@@ -5,24 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\Postulante\Views\NewFolder\**" />
+    <Content Remove="Areas\Postulante\Views\NewFolder\**" />
+    <EmbeddedResource Remove="Areas\Postulante\Views\NewFolder\**" />
+    <None Remove="Areas\Postulante\Views\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Areas\Administrador\Data\" />
     <Folder Include="Areas\Administrador\Models\" />
-    <Folder Include="Areas\VistaUsuarioMiPerfil\Data\" />
-    <Folder Include="Areas\VistaUsuarioMiPerfil\Models\" />
-    <Folder Include="Areas\VistaEmpresaMiPerfil\Data\" />
-    <Folder Include="Areas\VistaEmpresaMiPerfil\Models\" />
-    <Folder Include="Areas\VistaUsuarioMisOfertas\Data\" />
-    <Folder Include="Areas\VistaUsuarioMisOfertas\Models\" />
-    <Folder Include="Areas\VistaEmpresaMisOfertas\Data\" />
-    <Folder Include="Areas\VistaEmpresaMisOfertas\Models\" />
-    <Folder Include="Areas\VistaUsuarioPublicaciones\Data\" />
-    <Folder Include="Areas\VistaUsuarioPublicaciones\Models\" />
-    <Folder Include="Areas\VistaEmpresaPublicaciones\Data\" />
-    <Folder Include="Areas\VistaEmpresaPublicaciones\Models\" />
     <Folder Include="Areas\Empresa\Data\" />
     <Folder Include="Areas\Empresa\Models\" />
     <Folder Include="Areas\Postulante\Data\" />

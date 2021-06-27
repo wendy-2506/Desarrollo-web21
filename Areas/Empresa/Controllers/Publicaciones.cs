@@ -4,14 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Tu_Nuevo_Trabajo2021.Areas.VistaEmpresaMiPerfil.Controllers
+namespace Tu_Nuevo_Trabajo2021.Areas.Empresa.Controllers
 {
-    [Area("VistaEmpresaMiPerfil")]
-    public class HomeController : Controller
+    [Area("Empresa")]
+    public class Publicaciones : Controller
     {
         public IActionResult Index()
         {
-
             return View();
         }
     }
