@@ -8,72 +8,54 @@
 <br>
 <br>
 
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">NOMBRE EMPRESA</span>
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputNombre">NOMBRE</label>
+            <input type="text" class="form-control" id="inputNombre">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputRAZON">RAZON SOCIAL</label>
+            <input type="text" class="form-control" id="inputRAZON">
+        </div>
     </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
 
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">RAZON SOCIAL</span>
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label for="inputRUC">RUC</label>
+            <input type="text" class="form-control" id="inputRUC">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputDirec">DIRECCIÓN</label>
+            <input type="text" class="form-control" id="inputDirec">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="inputFOTO">CARGAR FOTO</label>
+            <input type="file" class="form-control" id="inputFOTO">
+        </div>
     </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
 
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">RUC</span>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label for="inputEmail4">CORREO ELECTRÓNICO</label>
+            <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputPassword4">CONTRASEÑA</label>
+            <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputPassword4">CONFIRMAR CONTRASEÑA</label>
+            <input type="password" class="form-control" id="inputConfPassword4">
+        </div>
     </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
 
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">DIRECCIÓN</span>
+    <div class="form-row">
+        <div class="form-group col-md-12">
+            <label for="inputEmail4">DESCRIPCIÓN</label>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
     </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
 
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">CORREO</span>
-    </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
-
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">CONTRASEÑA</span>
-    </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
-
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">REPITA CONTRASEÑA</span>
-    </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
-
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroupFileAddon01">CARGAR FOTO</span>
-    </div>
-    <div class="custom-file">
-        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-    </div>
-</div>
-
-<div class="input-group">
-    <div class="input-group-prepend">
-        <span class="input-group-text">DESCRIPCION</span>
-    </div>
-    <textarea class="form-control" aria-label="With textarea"></textarea>
-</div>
-
-<br>
-
-<button type="button" class="btn btn-success">REGISTRAR</button>
+    <button type="submit" class="btn btn-primary">REGISTRAR EMPRESA</button>
+</form>
