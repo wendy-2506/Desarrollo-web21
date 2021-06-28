@@ -26,6 +26,8 @@
     <Folder Include="Areas\Administrador\Models\" />
     <Folder Include="Areas\Empresa\Data\" />
     <Folder Include="Areas\Empresa\Models\" />
+    <Folder Include="Areas\LOGIN2\Data\" />
+    <Folder Include="Areas\LOGIN2\Models\" />
     <Folder Include="Areas\Postulante\Data\" />
     <Folder Include="Areas\Postulante\Models\" />
     <Folder Include="Areas\Registro\Data\" />
