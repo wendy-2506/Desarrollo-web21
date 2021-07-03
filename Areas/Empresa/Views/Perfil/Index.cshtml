@@ -1,57 +1,73 @@
 ﻿<h1>ESTA ES AREA DE LA EMPRESA PERFIL</h1>
 
 <div class="btn-group btn-lg btn-block" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-outline-primary">Publicaciones</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Empresa/Publicaciones'">Publicaciones</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Empresa/OfertaLaboral'">Mis ofertas Publicadas</button>
-    <button type="button" class="btn btn-outline-primary">Mi perfil</button>
+    <button type="button" class="btn btn-outline-primary active">Mi perfil</button>
 </div>
 
-<div class="modal-footer">
-    <button type="button" class="btn btn-secondary" data-dismiss="modal">Editar Perfil </button>
-    <button type="button" class="btn btn-primary" id="btnGuardarCliente">Desactivar Cuenta</button>
-</div>
-
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">NOMBRE EMPRESA</span>
-    </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
-
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">RAZON SOCIAL</span>
-    </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
-
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">RUC</span>
-    </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
-
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">DIRECCIÓN</span>
-    </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
-
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">CORREO</span>
-    </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
-
-<div class="input-group">
-    <div class="input-group-prepend">
-        <span class="input-group-text">DESCRIPCION</span>
-    </div>
-    <textarea class="form-control" aria-label="With textarea"></textarea>
-</div>
+<button type="button" class="btn btn-link" style="float: right;">DESACTIVAR CUENTA</button>
+<button type="button" class="btn btn-link" style="float: right;">EDITAR PERFIL</button>
 
 <br>
 <br>
+<br>
+
+<form>
+    <div class="form-row">
+        <div class="file-field col-md-4">
+            <img src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg" class="img-fluid"
+                 alt="example placeholder">
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="inputNombre">NOMBRE</label>
+            <input type="text" class="form-control" id="inputNombre">
+        </div>
+
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-4">
+
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputRAZON">RAZON SOCIAL</label>
+            <input type="text" class="form-control" id="inputRAZON">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-4">
+
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="inputRUC">RUC</label>
+            <input type="text" class="form-control" id="inputRUC">
+        </div>
+
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-4">
+
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputDirec">DIRECCIÓN</label>
+            <input type="text" class="form-control" id="inputDirec">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-4">
+
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">DESCRIPCIÓN</label>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+    </div>
+
+</form>
+
