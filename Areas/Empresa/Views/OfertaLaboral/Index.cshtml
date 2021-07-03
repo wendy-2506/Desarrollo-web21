@@ -1,0 +1,100 @@
+﻿@model IEnumerable<Tu_Nuevo_Trabajo2021.Models.OfertaLaboral>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>ESTA ES AREA DE LA EMPRESA OFERTAS</h1>
+<div class="btn-group btn-lg btn-block" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-outline-primary">Publicaciones</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Empresa/OfertaLaboral'">Mis ofertas Publicadas</button>
+    <button type="button" class="btn btn-outline-primary">Mi perfil</button>
+</div>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PuestoOferta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaCreacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaCancelacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaFin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Requisitos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lugar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoContrato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstadoOferta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdUsuarioNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PuestoOferta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaCreacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaCancelacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaFin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Requisitos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lugar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoContrato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstadoOferta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdUsuarioNavigation.IdUsuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdOferta">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdOferta">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdOferta">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

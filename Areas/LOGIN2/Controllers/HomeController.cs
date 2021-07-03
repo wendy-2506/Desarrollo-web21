@@ -23,6 +23,7 @@ namespace Tu_Nuevo_Trabajo2021.Areas.LOGIN2.Controllers
         public IActionResult Login(string email, string password)
         {
             if (email == "omartel@esan.edu.pe" && password == "aprobar123")
+                
             {
                 return RedirectToAction("Index", "Home", new { area = "Postulante" });
             }
