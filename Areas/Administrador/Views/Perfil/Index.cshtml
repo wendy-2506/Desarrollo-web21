@@ -1,67 +1,53 @@
 ﻿<h1>ESTA ES AREA DE ADMINISTRADOR PERFIL</h1>
 
 <div class="btn-group btn-lg btn-block" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-outline-primary">Perfil</button>
-    <button type="button" class="btn btn-outline-primary">Usuarios</button>
-    <button type="button" class="btn btn-outline-primary">Ofertas Publicadas</button>
-    <button type="button" class="btn btn-outline-primary">Postulaciones</button>
-    <button type="button" class="btn btn-outline-primary">Reportes</button>
-    <button type="button" class="btn btn-outline-primary">Sugerencias</button>
+    <button type="button" class="btn btn-outline-primary active">Perfil</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Usuarios'">Usuarios</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/OfertasPublicadas '">Ofertas Publicadas</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Postulaciones '">Postulaciones</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Reportes '">Reportes</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Sugerencias '">Sugerencias</button>
 </div>
 
 <div class="modal-footer">
     <button type="button" class="btn btn-secondary" data-dismiss="modal">Editar Perfil </button>
     <button type="button" class="btn btn-primary" id="btnGuardarCliente">Desactivar Cuenta</button>
 </div>
-<br>
-<br>
 
 
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">NOMBRE</span>
+<form>
+    <div class="form-row">
+        <div class="file-field col-md-4">
+            <img src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg" class="img-fluid"
+                 alt="example placeholder">
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="inputNombre">NOMBRE</label>
+            <input type="text" class="form-control" id="inputNombre">
+
+            <label for="inputDNI">DNI</label>
+            <input type="text" class="form-control" id="inputDNI">
+
+            <label for="inputEmail">Correo</label>
+            <input type="text" class="form-control" id="inputEmail">
+            <label for="inputPhone">Telefono</label>
+            <input type="text" class="form-control" id="inputPhone">
+            <label for="inputDireccion">Direccion</label>
+            <input type="text" class="form-control" id="inputDireccion">
+
+        </div>
+
     </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
 
 
-
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">DNI</span>
-    </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
+   
+</form>
 
 
 
 
 
-
-
-
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">CORREO</span>
-    </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">TELEFONO</span>
-    </div>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
-
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroupFileAddon01">DIRECCION</span>
-    </div>
-    <div class="custom-file">
-        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-    </div>
-</div>
 
 
 

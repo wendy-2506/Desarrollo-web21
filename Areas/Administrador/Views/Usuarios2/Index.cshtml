@@ -2,7 +2,7 @@
 
 <div class="btn-group btn-lg btn-block" role="group" aria-label="Basic example">
     <button type="button" class="btn btn-outline-primary " onclick="location='/Administrador/Perfil'">Perfil</button>
-    <button type="button" class="btn btn-outline-primary active" >Usuarios</button>
+    <button type="button" class="btn btn-outline-primary active">Usuarios</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/OfertasPublicadas '">Ofertas Publicadas</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Postulaciones '">Postulaciones</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Reportes '">Reportes</button>
@@ -10,18 +10,20 @@
 </div>
 
 <div class="btn-group" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-primary active">EMPRESA</button>
-    <button type="button" class="btn btn-primary" onclick="location='/Administrador/Usuarios2'">POSTULANTE</button>
-    
+    <button type="button" class="btn btn-primary" onclick="location='/Administrador/Usuarios'">EMPRESA</button>
+    <button type="button" class="btn btn-primary active">POSTULANTE</button>
+
 </div>
 
-<table class="table">
+
+<table id=" tbListadoPostulante" class="table">
     <thead>
         <tr>
             <th scope="col">ESTADO</th>
             <th scope="col">NOMBRE</th>
-            <th scope="col">RUC</th>
+            <th scope="col">DNI</th>
             <th scope="col">FECHA RE</th>
+            <th scope="col">EDAD</th>
             <th scope="col">CORREO</th>
             <th scope="col">DIRECCION</th>
             <th scope="col">TELEFONO</th>
@@ -30,3 +32,17 @@
     </thead>
 
 </table>
+
+<script>
+    loadTable();
+    function loadTable() {
+        let table = $("#tbListadoPostulante").DataTable({
+            lengthChange: false,
+            buttons: ['copy', 'excel', 'pdf', 'colvis', 'print']
+        });
+
+        table.buttons().container()
+            .insertBefore("#tbListadoPostulante_filter");
+
+    }
+</script>
