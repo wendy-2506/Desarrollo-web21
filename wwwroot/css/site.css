@@ -30,7 +30,7 @@ html {
     font-size: 14px;
     background-color: bisque;
 }
-#encabezado {
+header {
     background-color: bisque;
 }
 @media (min-width: 768px) {
@@ -68,6 +68,7 @@ body {
     margin-bottom: 60px;
     background-color: bisque;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
