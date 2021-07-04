@@ -9,7 +9,7 @@ namespace Tu_Nuevo_Trabajo2021.Areas.Registro.Controllers
     [Area("Registro")]
     public class PostulanteController : Controller
     {
-        public IActionResult Index()
+        public IActionResult RegistroPostulante()
         {
             return View();
         }

@@ -9,7 +9,7 @@ namespace Tu_Nuevo_Trabajo2021.Areas.Registro.Controllers
     [Area("Registro")]
     public class EmpresaController : Controller
     {
-        public IActionResult Index()
+        public IActionResult RegistroEmpresa()
         {
             return View();
         }
