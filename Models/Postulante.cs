@@ -13,6 +13,8 @@ namespace Tu_Nuevo_Trabajo2021.Models
         public string Dni { get; set; }
         public byte[] DocumentoCv { get; set; }
         public DateTime? FechaNacimiento { get; set; }
+        public byte[] Foto { get; set; }
+        public string Descripcion { get; set; }
 
         public virtual Usuario PostulanteNavigation { get; set; }
     }

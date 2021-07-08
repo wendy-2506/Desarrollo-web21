@@ -1,11 +1,8 @@
-﻿@{
+﻿@model IEnumerable<Tu_Nuevo_Trabajo2021.Models.OfertaLaboral>
+@{
     ViewData["Title"] = "Home Page";
-    //List <Oferta> listado = ViewBag.ListadoOferta;
 }
-<header>    
-    
-    
-
+<header>
 </header>
 <body>
     <br>
@@ -21,40 +18,23 @@
 
     <table class="table-secondary table-borderless table align-middle">
         <tbody>
-            @*@foreach (var item in listado) { 
-            
-            
-            
-            
-            }*@
+            @foreach (var item in Model) {             
             <tr>
-                @*<td class="align-middle">@item.</td>*@
-                <td class="align-middle">10/04/2021</td>
-                <td class="align-middle">Corporación Educativa se encuentra en la búsqueda de personal altamente calificado para el puesto de Practicante Pre-Profesional Seguridad TI</td>
-                <td class="align-middle">Practicas Preprofesionales</td>
+                <td class="align-middle">
+                    @Html.DisplayFor(modelItem => item.FechaInicio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PuestoOferta)
+                </td>
+                <td class="align-middle">
+                    @Html.DisplayFor(modelItem => item.Descripcion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TipoContrato)
+                </td>
             </tr>
-
-            <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>This cell is aligned to the top.</td>
-                <td>...</td>
-            </tr>
+            }   
         </tbody>
-
     </table>
-
-    @*<nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                </li>
-            </ul>
-        </nav>*@
+   
 </body>

@@ -12,6 +12,8 @@ namespace Tu_Nuevo_Trabajo2021.Models
         public string RazonSocial { get; set; }
         public string Ruc { get; set; }
         public string Direccion { get; set; }
+        public byte[] Foto { get; set; }
+        public string Descripcion { get; set; }
 
         public virtual Usuario EmpresaNavigation { get; set; }
     }

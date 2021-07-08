@@ -26,6 +26,7 @@ namespace Tu_Nuevo_Trabajo2021
         {
 
             services.AddControllersWithViews();
+            //REGISTRO DE LA BD DEL PROYECTO
             services.AddDbContext<_10MOCICLOContext>(options =>
                options.UseSqlServer(Configuration.GetConnectionString("DevConnection"))
 
