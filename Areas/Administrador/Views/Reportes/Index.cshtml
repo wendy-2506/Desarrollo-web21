@@ -10,6 +10,9 @@
     <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Sugerencias'">Sugerencias</button>
 </div>
 
+<br>
+<br>
+
 <form>
     <div class="form-row">
         <div class="form-group col-md-6 input-group w-50">
@@ -19,16 +22,25 @@
             <input type="text" class="form-control" placeholder="Nombre de postulante" aria-label="Nombre de postulante" aria-describedby="basic-addon1">
             &nbsp;&nbsp;&nbsp;<button class="btn btn-outline-primary" type="button" id="button-addon2">Buscar</button>
         </div>
-        <div class="form-group col-md-3" >
+
+        <div class="form-group col-md-3">
             <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Elegir...</option>
+                <option selected>Elegir Usuario...</option>
                 <option value="1">Empresas</option>
-                <option value="2">Usuarios</option>
+                <option value="2">Postulante</option>
+            </select>
+        </div>
+
+        <div class="form-group col-md-3">
+            <select class="custom-select" id="inputGroupSelect02">
+                <option selected>Elegir Estado...</option>
+                <option value="1">Activo</option>
+                <option value="2">Inactivo</option>
             </select>
         </div>
     </div>
 
-    <div class="form-row">        
+    <div class="form-row">
         <div class="form-group col-md-3" style="white-space:nowrap">
             <label for="inputFecha">Fecha Inicio</label><input type="date" class="form-control" id="inputFechaInicio">
         </div>
@@ -36,6 +48,7 @@
             <label for="inputFecha">Fecha Fin</label>
             <input type="date" class="form-control" id="inputFechaFin">
         </div>
+
     </div>
     
     <table id="tbListadoReportes" class="table table-striped">
