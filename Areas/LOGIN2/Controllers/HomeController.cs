@@ -29,7 +29,7 @@ namespace Tu_Nuevo_Trabajo2021.Areas.LOGIN2.Controllers
             }
             if (email == "wmendoza@esan.edu.pe" && password == "hola123")
             {
-                return RedirectToAction("Index", "Home", new { area = "Empresa" });
+                return RedirectToAction("Index", "Publicaciones", new { area = "Empresa" });
             }
             if (email == "lvillacrez@esan.edu.pe" && password == "desweb21")
             {
