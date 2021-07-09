@@ -10,38 +10,58 @@
     <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Sugerencias'">Sugerencias</button>
 </div>
 
-<div class="input-group w-50">
-    <span class="input-group-text" id="basic-addon1">
-        <img src="~/imagenes/search.svg" width="16" height="16">
-    </span>
-    <input type="text" class="form-control" placeholder="Nombre de postulante" aria-label="Nombre de postulante" aria-describedby="basic-addon1">
-    &nbsp;&nbsp;&nbsp;<button class="btn btn-outline-primary" type="button" id="button-addon2">Buscar</button>
-</div>
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6 input-group w-50">
+            <span class="input-group-text" id="basic-addon1">
+                <img src="~/imagenes/search.svg" width="16" height="16">
+            </span>
+            <input type="text" class="form-control" placeholder="Nombre de postulante" aria-label="Nombre de postulante" aria-describedby="basic-addon1">
+            &nbsp;&nbsp;&nbsp;<button class="btn btn-outline-primary" type="button" id="button-addon2">Buscar</button>
+        </div>
+        <div class="form-group col-md-3" >
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Elegir...</option>
+                <option value="1">Empresas</option>
+                <option value="2">Usuarios</option>
+            </select>
+        </div>
+    </div>
 
+    <div class="form-row">        
+        <div class="form-group col-md-3" style="white-space:nowrap">
+            <label for="inputFecha">Fecha Inicio</label><input type="date" class="form-control" id="inputFechaInicio">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="inputFecha">Fecha Fin</label>
+            <input type="date" class="form-control" id="inputFechaFin">
+        </div>
+    </div>
+    
+    <table id="tbListadoReportes" class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">DNI/RUC</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Telefono</th>
+            </tr>
+        </thead>
+    </table>
 
+</form>
 
-<table id="tbListadoReportes" class="table table-striped">
-    <thead>
-        <tr>
-            <th scope="col">Puesto</th>
-            <th scope="col">Empresa</th>
-            <th scope="col">Salario</th>
-            <th scope="col">Tipo de Contrato</th>
-            <th scope="col">Fecha Postulación</th>
-        </tr>
-    </thead>
-</table>
+    <script>
+        loadTable();
+        function loadTable() {
+            let table = $("#tbListadoPostulante").DataTable({
+                lengthChange: false,
+                buttons: ['copy', 'excel', 'pdf', 'colvis', 'print']
+            });
 
-<script>
-    loadTable();
-    function loadTable() {
-        let table = $("#tbListadoPostulante").DataTable({
-            lengthChange: false,
-            buttons: ['copy', 'excel', 'pdf', 'colvis', 'print']
-        });
+            table.buttons().container()
+                .insertBefore("#tbListadoPostulante_filter");
 
-        table.buttons().container()
-            .insertBefore("#tbListadoPostulante_filter");
-
-    }
-</script>
+        }
+    </script>
