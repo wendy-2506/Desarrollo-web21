@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Perfil Administrador";
+    ViewData["Title"] = "Editar Perfil";
 }
 <div class="btn-group btn-lg btn-block" role="group" aria-label="Basic example">
     <button type="button" class="btn btn-outline-primary active">Perfil</button>
@@ -11,8 +11,8 @@
 </div>
 
 <div class="modal-footer">
-    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="location='/Administrador/Editar'" >Editar mi perfil </button>
-    @*<button type="button" class="btn btn-primary" id="btnGuardarCliente">Desactivar mi cuenta</button>*@
+    <button type="button" class="btn btn-primary" id="btnGuardarCambios">Guardar Cambios</button>
+    <button type="button" class="btn btn-danger" id="btnGuardarCancelar" onclick="location='/Administrador/Perfil'">Cancelar</button>
 </div>
 
 <form>
@@ -24,19 +24,19 @@
 
         <div class="form-group col-md-6">
             <label for="inputNombre">Nombres</label>
-            <input type="text" readonly="readonly" class="form-control" id="inputNombre">
+            <input type="text" class="form-control" id="inputNombre">
 
             <label for="inputApellido">Apellidos</label>
-            <input type="text" readonly="readonly" class="form-control" id="inputApellidos">
+            <input type="text" class="form-control" id="inputApellidos">
 
             <label for="inputUsername">Username</label>
-            <input type="text" readonly="readonly" class="form-control" id="inputUsername">
+            <input type="text" class="form-control" id="inputUsername">
 
             <label for="inputEmail">Correo</label>
-            <input type="text" readonly="readonly" class="form-control" id="inputEmail">
+            <input type="text" class="form-control" id="inputEmail">
 
             <label for="inputPhone">Telefono</label>
-            <input type="text" readonly="readonly" class="form-control" id="inputPhone">
+            <input type="text" class="form-control" id="inputPhone">
 
         </div>
 
@@ -45,12 +45,5 @@
 
 
 </form>
-
-
-
-
-
-
-
 
 

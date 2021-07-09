@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Lista de Usuarios";
+}
+
+<div class="btn-group btn-lg btn-block" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-outline-primary " onclick="location='/Administrador/Perfil'">Perfil</button>
+    <button type="button" class="btn btn-outline-primary active">Usuarios</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/OfertasPublicadas'">Ofertas Publicadas</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Postulaciones'">Postulaciones</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Reportes'">Reportes</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Sugerencias'">Sugerencias</button>
+</div>
+<br><br/>
+<div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary active">Empresas</button>
+    <button type="button" class="btn btn-primary" onclick="location='/Administrador/UsuariosPostulantes'">Postulantes</button>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ESTADO</th>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">RUC</th>
+            <th scope="col">FECHA RE</th>
+            <th scope="col">CORREO</th>
+            <th scope="col">DIRECCION</th>
+            <th scope="col">TELEFONO</th>
+
+        </tr>
+    </thead>
+
+</table>
