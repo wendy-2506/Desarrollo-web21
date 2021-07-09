@@ -20,6 +20,8 @@ namespace Tu_Nuevo_Trabajo2021.Models
         public string TipoContrato { get; set; }
         public int? EstadoOferta { get; set; }
 
+        //public int? Salario { get; set; }
+
         public virtual Usuario IdUsuarioNavigation { get; set; }
     }
 }
