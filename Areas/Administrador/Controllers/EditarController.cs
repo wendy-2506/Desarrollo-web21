@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Tu_Nuevo_Trabajo2021.Areas.Administrador.Controllers
 {
     [Area("Administrador")]
-    public class Usuarios : Controller
+    public class EditarController : Controller
     {
         public IActionResult Index()
         {
