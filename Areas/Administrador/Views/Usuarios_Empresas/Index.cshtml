@@ -1,48 +1,46 @@
-﻿<h1>ESTA ES AREA DE ADMINISTRADOR USUARIOS</h1>
+﻿@{
+    ViewData["Title"] = "Lista Usuarios Empresa";
+}
 
 <div class="btn-group btn-lg btn-block" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-outline-primary " onclick="location='/Administrador/Perfil'">Perfil</button>
+    <button type="button" class="btn btn-outline-primary " onclick="location='/Administrador/Perfil'">Mi Perfil</button>
     <button type="button" class="btn btn-outline-primary active">Usuarios</button>
-    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/OfertasPublicadas'">Ofertas Publicadas</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Ofertas_Publicadas'">Ofertas Publicadas</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Postulaciones'">Postulaciones</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Reportes'">Reportes</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Sugerencias'">Sugerencias</button>
 </div>
 
-<div class="btn-group" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-primary" onclick="location='/Administrador/Usuarios_Empresas'">Empresas</button>
-    <button type="button" class="btn btn-primary active">Postulantes</button>
-
+<div class="text-center">
+    <div class="btn-group btn-group-toggle" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary active">Empresas</button>
+        <button type="button" class="btn btn-primary" onclick="location='/Administrador/Usuarios_Postulantes'">Postulantes</button>
+    </div>
 </div>
 
-
-<table id=" tbListadoPostulante" class="table">
+<table id="tbListadoEmpresa" class="table table-striped">
     <thead>
         <tr>
-            <th scope="col">ESTADO</th>
-            <th scope="col">NOMBRE</th>
-            <th scope="col">DNI</th>
-            <th scope="col">FECHA RE</th>
-            <th scope="col">EDAD</th>
-            <th scope="col">CORREO</th>
-            <th scope="col">DIRECCION</th>
-            <th scope="col">TELEFONO</th>
-
+            <th scope="col">Nombre</th>
+            <th scope="col">Razon Social</th>
+            <th scope="col">RUC</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Telefono</th>
         </tr>
     </thead>
-
 </table>
 
-<script>
-    loadTable();
-    function loadTable() {
-        let table = $("#tbListadoPostulante").DataTable({
-            lengthChange: false,
-            buttons: ['copy', 'excel', 'pdf', 'colvis', 'print']
-        });
+    <script>
+        loadTable();
+        function loadTable() {
+            let table = $("#tbListadoPostulante").DataTable({
+                lengthChange: false,
+                buttons: ['copy', 'excel', 'pdf', 'colvis', 'print']
+            });
 
-        table.buttons().container()
-            .insertBefore("#tbListadoPostulante_filter");
+            table.buttons().container()
+                .insertBefore("#tbListadoPostulante_filter");
 
-    }
-</script>
+        }
+    </script>

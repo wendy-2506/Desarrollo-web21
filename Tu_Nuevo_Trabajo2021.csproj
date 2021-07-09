@@ -32,6 +32,7 @@
   <ItemGroup>
     <Folder Include="Areas\Administrador\Data\" />
     <Folder Include="Areas\Administrador\Models\" />
+    <Folder Include="Areas\Administrador\Views\NewFolder\" />
     <Folder Include="Areas\Empresa\Data\" />
     <Folder Include="Areas\Empresa\Models\" />
     <Folder Include="Areas\LOGIN2\Data\" />
