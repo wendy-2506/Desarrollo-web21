@@ -1,16 +1,17 @@
 ﻿@{
-    ViewData["Title"] = "Perfil Administrador";
+    ViewData["Title"] = "Mi Perfil";
 }
+
 <div class="btn-group btn-lg btn-block" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-outline-primary active">Perfil</button>
+    <button type="button" class="btn btn-outline-primary active">Mi Perfil</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Usuarios_Empresas'">Usuarios</button>
-    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/OfertasPublicadas'">Ofertas Publicadas</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Ofertas_Publicadas'">Ofertas Publicadas</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Postulaciones'">Postulaciones</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Reportes'">Reportes</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Sugerencias'">Sugerencias</button>
 </div>
 
-<div class="modal-footer">
+<div class="text-right">
     <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="location='/Administrador/Editar'" >Editar mi perfil </button>
     @*<button type="button" class="btn btn-primary" id="btnGuardarCliente">Desactivar mi cuenta</button>*@
 </div>
@@ -41,8 +42,6 @@
         </div>
 
     </div>
-
-
 
 </form>
 

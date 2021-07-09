@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Ofertas Publicadas";
+}
+<div class="btn-group btn-lg btn-block" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-outline-primary " onclick="location='/Administrador/Perfil'">Mi Perfil</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Usuarios_Empresas'">Usuarios</button>
+    <button type="button" class="btn btn-outline-primary active">Ofertas Publicadas</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Postulaciones'">Postulaciones</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Reportes'">Reportes</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Sugerencias'">Sugerencias</button>
+</div>
+
+<div class="input-group w-50">
+    <span class="input-group-text" id="basic-addon1">
+        <img src="~/imagenes/search.svg" width="16" height="16">
+    </span>
+    <input type="text" class="form-control" placeholder="Nombre de empresa" aria-label="Nombre de empresa" aria-describedby="basic-addon1">
+    &nbsp;&nbsp;&nbsp;<button class="btn btn-outline-primary" type="button" id="button-addon2">Buscar</button>
+</div>
+
+<table id="tbListadoOfertas" class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Puesto</th>
+            <th scope="col">Nro. Postulantes</th>
+            <th scope="col">Salario</th>
+            <th scope="col">Tipo Contrato</th>
+            <th scope="col">Fecha Límite</th>
+        </tr>
+    </thead>
+</table>
+
+<script>
+    loadTable();
+    function loadTable() {
+        let table = $("#tbListadoPostulante").DataTable({
+            lengthChange: false,
+            buttons: ['copy', 'excel', 'pdf', 'colvis', 'print']
+        });
+
+        table.buttons().container()
+            .insertBefore("#tbListadoPostulante_filter");
+
+    }
+</script>
