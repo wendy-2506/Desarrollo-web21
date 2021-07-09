@@ -3,10 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>@ViewData["Title"] - Tu_Nuevo_Trabajo2021</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+
+    <!-- FORMATO TABLA------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" type="text/css" href="~/datatables/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/datatables/DataTables-1.10.25/css/dataTables.bootstrap4.min.css" />
+    <!-- FORMATO TABLA------------------------------------------------------------------------------------------->
+
 </head>
 <body style="background-color: bisque;">
     <header>
@@ -15,16 +21,16 @@
                 <a class="navbar-brand">
                     <img src="~/imagenes/logoweb.jpg" width="380" height="80">
                 </a>
-                    @*<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Tu_Nuevo_Trabajo2021</a>*@
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a>Hola admin &nbsp;<img src="~/imagenes/person-square.svg" width="25" height="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                </li>
-                <li class="nav-item">
-                    <a href="/Home/Index">Cerrar Sesión &nbsp;<img src="~/imagenes/x-lg.svg" width="20" height="20"></a>
-                </li>
-            </ul>
-                    
+                @*<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Tu_Nuevo_Trabajo2021</a>*@
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a>Hola admin &nbsp;<img src="~/imagenes/person-square.svg" width="25" height="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Home/Index">Cerrar Sesión &nbsp;<img src="~/imagenes/x-lg.svg" width="20" height="20"></a>
+                    </li>
+                </ul>
+
             </div>
         </nav>
     </header>
@@ -41,6 +47,10 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FORMATO TABLA------------------------------------------------------------------------------------------->
+    <script type="text/javascript" src="~/datatables/datatables.min.js"></script>
+
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
