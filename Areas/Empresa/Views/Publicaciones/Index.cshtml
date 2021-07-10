@@ -1,55 +1,13 @@
-﻿<h1>ESTA ES AREA DE LA EMPRESA PUBLICACIONES</h1>
+﻿@model IEnumerable<Tu_Nuevo_Trabajo2021.Models.OfertaLaboral>
+@{
+    ViewData["Title"] = "Publicaciones";
+}
 
 <div class="btn-group btn-lg btn-block" role="group" aria-label="Basic example">
     <button type="button" class="btn btn-outline-primary active">Publicaciones</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Empresa/OfertaLaboral'">Mis ofertas Publicadas</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Empresa/Perfil'">Mi perfil</button>
 </div>
-
-
-@*@{
-        ViewData["Title"] = "Home Page";
-    }
-    <header>
-    </header>
-
-        <body>
-            <br>
-                <div class="text-center">
-                    <h2>Últimas publicaciones</h2>
-                </div>
-
-
-                <br>
-                    <p>Estas son las últimas publicaciones de ofertas laborales en el portal de "Tu Nuevo Trabajo"</p>
-                    <br>
-
-
-                        <table class="table-secondary table-borderless table align-middle">
-                            <tbody>
-                                <tr>
-                                    <td class="align-middle">Practicante TI</td>
-                                    <td class="align-middle">10/04/2021</td>
-                                    <td class="align-middle">Corporación Educativa se encuentra en la búsqueda de personal altamente calificado para el puesto de Practicante Pre-Profesional Seguridad TI</td>
-                                    <td class="align-middle">Practicas Preprofesionales</td>
-                                </tr>
-
-                                <tr>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>This cell is aligned to the top.</td>
-                                    <td>...</td>
-                                </tr>
-                            </tbody>
-
-                        </table>
-
-
-    </body>*@
-@model IEnumerable<Tu_Nuevo_Trabajo2021.Models.OfertaLaboral>
-@{
-    ViewData["Title"] = "Home Page";
-}
 
 <header>
     @*<nav class="navbar navbar-dark bg-dark">
@@ -63,14 +21,14 @@
             <img src="~/imagenes/search.svg" width="16" height="16">
         </span>
         <input type="text" class="form-control" placeholder="Nombre de empresa" aria-label="Nombre de empresa" aria-describedby="basic-addon1">
-        &nbsp;&nbsp;&nbsp;<button class="btn btn-outline-primary" type="button" id="button-addon2">Buscar</button>
-    </div>
-    <hr>
+        &nbsp;&nbsp;&nbsp;<button class="btn btn-primary" type="button" id="button-addon2">Buscar</button>
+    </div>    
 
+    <br>
 </header>
-    <body>
+<body>
 
-        @*<br>
+    @*<br>
         <div class="text-center">
             <h2>Últimas publicaciones</h2>
         </div>
@@ -80,36 +38,34 @@
         <p>Estas son las últimas publicaciones de ofertas laborales en el portal de "Tu Nuevo Trabajo".</p>
         <br>*@
 
-        <div class="form-row">
-            <div class="form-group col-md-2">
-                <img src="https://i.ibb.co/k66q6K0/alicorp-squarelogo-1540813111809.png" class="img-fluid"
-                     alt="example placeholder" width="70" height="70">
-            </div>
-            <div class="form-group col-md-10">
+    <div class="form-row">
+        <div class="form-group col-md-2">
+            <img src="https://i.ibb.co/k66q6K0/alicorp-squarelogo-1540813111809.png" class="img-fluid"
+                 alt="example placeholder" width="70" height="70">
+        </div>
+        <div class="form-group col-md-10">
 
-                <table class="table table-dark ">
-                    <tbody>
-                        @foreach (var item in Model)
-                        {
-                            <tr>
-                                @*<td class="align-middle">
+            <table class="table table-dark ">
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            @*<td class="align-middle">
                                     @Html.DisplayFor(modelItem => item.FechaInicio)
                                 </td>*@
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.PuestoOferta)
-                                </td>
-                                <td class="align-middle">
-                                    @Html.DisplayFor(modelItem => item.Descripcion)
-                                </td>
-                                @*<td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PuestoOferta)
+                            </td>
+                            <td class="align-middle">
+                                @Html.DisplayFor(modelItem => item.Descripcion)
+                            </td>
+                            @*<td>
                                     @Html.DisplayFor(modelItem => item.TipoContrato)
                                 </td>*@
-                            </tr>
-                        }
-                    </tbody>
-                </table>
-            </div>
+                        </tr>
+                    }
+                </tbody>
+            </table>
         </div>
-        
-
+    </div>    
 </body>
