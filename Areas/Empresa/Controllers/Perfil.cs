@@ -13,5 +13,10 @@ namespace Tu_Nuevo_Trabajo2021.Areas.Empresa.Controllers
         {
             return View();
         }
+
+        public IActionResult Editar()
+        {
+            return View();
+        }
     }
 }

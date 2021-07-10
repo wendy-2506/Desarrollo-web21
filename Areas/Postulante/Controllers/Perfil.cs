@@ -13,5 +13,9 @@ namespace Tu_Nuevo_Trabajo2021.Areas.Postulante.Controllers
         {
             return View();
         }
+        public IActionResult Editar()
+        {
+            return View();
+        }
     }
 }

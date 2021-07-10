@@ -6,8 +6,10 @@
     <button type="button" class="btn btn-outline-primary active">Mi perfil</button>
 </div>
 
-@*<button type="button" class="btn btn-link" style="float: right;">DESACTIVAR CUENTA</button>*@
-<button type="button" class="btn btn-link" style="float: right;"onclick="location='/Postulante/Perfil/Editar'">EDITAR PERFIL</button>
+<div class="modal-footer">
+    <button type="button" class="btn btn-success" id="btnGuardarCambios">Guardar Cambios</button>
+    <button type="button" class="btn btn-danger" id="btnGuardarCancelar" onclick="location='/Postulante/Perfil'">Cancelar</button>
+</div>
 
 <br>
 <br>
@@ -22,15 +24,15 @@
 
         <div class="form-group col-md-6">
             <label for="inputNombre">NOMBRE</label>
-            <input type="text" readonly="readonly" class="form-control" id="inputNombre">
+            <input type="text"  class="form-control" id="inputNombre">
             <label for="inputApellido">Apellido</label>
-            <input type="text" readonly="readonly" class="form-control" id="inputApellido">
+            <input type="text"  class="form-control" id="inputApellido">
             <label for="inputDNI">DNI</label>
-            <input type="text" readonly="readonly" class="form-control" id="inputDNI">
+            <input type="text"  class="form-control" id="inputDNI">
             <label for="inputFechNac">Fecha De Nacimiento</label>
-            <input type="text" readonly="readonly" class="form-control" id="inputFechNac">
+            <input type="text"  class="form-control" id="inputFechNac">
             <label for="inputEmail">Correo</label>
-            <input type="text" readonly="readonly" class="form-control" id="inputEmail">
+            <input type="text"  class="form-control" id="inputEmail">
 
         </div>
 
@@ -54,26 +56,14 @@
         </div>
         <div class="form-group col-md-6">
             <label for="inputEmail4">DESCRIPCIÓN</label>
-            <textarea readonly="readonly" class="form-control" aria-label="With textarea"></textarea>
+            <textarea  class="form-control" aria-label="With textarea"></textarea>
         </div>
         <br>
     </div>
 </form>
 
-<button type="button" class="btn btn-link" style="float: right;" onclick="location='/Postulante/SugerenciaPos'">ENVIAR SUGERENCIA</button>
+@*<button type="button" class="btn btn-link" style="float: right;" onclick="location='/Postulante/SugerenciaPos'">ENVIAR SUGERENCIA</button>*@
 
 <br>
 <br>
-
-
-
-
-
-
-
-
-
-
-
-
 
