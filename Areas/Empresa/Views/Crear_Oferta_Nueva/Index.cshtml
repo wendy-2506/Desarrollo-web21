@@ -17,27 +17,27 @@
 <form>
     <div class="form-row">
         <div class="form-group col-md-6">
-            <label for="inputNombre">NOMBRE DE LA EMPRESA</label>
-            <input type="text" class="form-control" id="inputNombre">
+            <label for="inputPuesto">Puesto de la Oferta</label>
+            <input type="text" class="form-control" id="inputPuesto">
         </div>
         <div class="form-group col-md-6">
-            <label for="inputApellido">APELLIDOS</label>
-            <input type="text" class="form-control" id="inputApellido">
+            <label for="inputTipoContrato">Tipo De Contrato</label>
+            <input type="text" class="form-control" id="inputTipoContrato">
         </div>
     </div>
 
     <div class="form-row">
         <div class="form-group col-md-3">
-            <label for="inputDNI">DNI</label>
-            <input type="text" class="form-control" id="inputDNI">
+            <label for="inputSalario">Salario</label>
+            <input type="number" min="1" step="any" class="form-control" id="inputSalario">
         </div>
         <div class="form-group col-md-3">
-            <label for="inputFecha">FECHA NACIMIENTO</label>
-            <input type="date" class="form-control" id="inputFecha">
+            <label for="inputFechaPubli">Fecha Publicación</label>
+            <input type="date" class="form-control" id="inputFechaPubli">
         </div>
         <div class="form-group col-md-3">
-            <label for="inputCV">CARGAR CV</label>
-            <input type="file" class="form-control" id="inputCV">
+            <label for="inputFechaCancel">Fecha Cierre</label>
+            <input type="date" class="form-control" id="inputFechaCancel">
         </div>
         <div class="form-group col-md-3">
             <label for="inputFOTO">CARGAR FOTO</label>
@@ -71,10 +71,10 @@
 
     <div class="text-center">
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticBackdrop">
-            Registrar
+            Registrar nueva Oferta Laboral
         </button>&nbsp;&nbsp;&nbsp;&nbsp;
 
-        <button type="submit" class="btn btn-danger" onclick="location='/Empresa/OfertaLaboral'">CANCELAR</button>
+        <button type="submit" class="btn btn-danger" onclick="location='/Empresa/OfertaLaboral'">Cancelar</button>
 
     </div>
 
@@ -90,11 +90,11 @@
                 </div>
                 <div class="text-center">
                     <div class="modal-body">
-                        OFERTA CREADA EXITOSAMENTE
+                        Oferta Creada Exitosamente
                     </div>
                 </div>
                 <div class="text-center">
-                    <button type="button" class="btn btn-success" data-dismiss="modal" onclick="location='/Empresa/OfertaLaboral'">ACEPTAR</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal" onclick="location='/Empresa/OfertaLaboral'">Aceptar</button>
                 </div>
                 <br>
                 <br>

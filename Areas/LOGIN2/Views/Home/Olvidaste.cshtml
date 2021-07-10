@@ -1,8 +1,11 @@
-﻿
-<h1 align="center" >¿Haz olvidado tu contraseña? </h1>
+﻿@{
+    ViewData["Title"] = "Olvidar Contraseña";
+}
+
+<h1 align="center">¿Has olvidado tu contraseña? </h1>
 
 <hr>
-<h5 align="center"> Por favor ingresa el correo vinculado a tu cuenta </h5>
+<h5 align="center"> Por favor, ingresa el correo vinculado a tu cuenta </h5>
 @*<h5> se enviara un link para poder crear una nueva contraseña </h5>*@
 <div class="form-row">
     <div class="form-group col-md-3">
@@ -23,7 +26,7 @@
 
 <div class="text-center">
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-        ENVIAR CORREO
+        Enviar Correo
     </button>
 </div>
 
@@ -43,10 +46,10 @@
                 </div>
             </div>
             <div class="text-center">
-               <button type="button" class="btn btn-success" data-dismiss="modal" onclick="location='/LOGIN2/Home/Login'">ACEPTAR</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="location='/LOGIN2/Home/Login'">Aceptar</button>
             </div>
             <br>
             <br>
-            </div>
         </div>
+    </div>
 </div>
