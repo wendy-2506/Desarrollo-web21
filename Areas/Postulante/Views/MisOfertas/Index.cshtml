@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<Tu_Nuevo_Trabajo2021.Models.OfertaLaboral>
+@{
     ViewData["Title"] = "Mis Postulaciones";
 }
 
@@ -7,11 +8,6 @@
     <button type="button" class="btn btn-outline-primary active">Mis Postulaciones</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Postulante/Perfil'">Mi perfil</button>
 </div>
-
-@model IEnumerable<Tu_Nuevo_Trabajo2021.Models.OfertaLaboral>
-@{
-    ViewData["Title"] = "Home Page";
-}
 
 <header>
     @*<nav class="navbar navbar-dark bg-dark">
