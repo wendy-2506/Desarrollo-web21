@@ -33,7 +33,7 @@ namespace Tu_Nuevo_Trabajo2021.Areas.LOGIN2.Controllers
             }
             if (email == "lvillacrez@esan.edu.pe" && password == "desweb21")
             {
-                return RedirectToAction("Index", "Home", new { area = "Administrador" });
+                return RedirectToAction("Index", "Perfil", new { area = "Administrador" });
             }
             return View();
         }

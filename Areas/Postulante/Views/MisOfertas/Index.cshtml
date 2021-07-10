@@ -6,3 +6,82 @@
     <button type="button" class="btn btn-outline-primary" onclick="location='/Postulante/Perfil'">Mi perfil</button>
 </div>
 
+@model IEnumerable<Tu_Nuevo_Trabajo2021.Models.OfertaLaboral>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<header>
+    @*<nav class="navbar navbar-dark bg-dark">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>*@
+    <div class="input-group w-70">
+        <span class="input-group-text" id="basic-addon1">
+            <img src="~/imagenes/search.svg" width="16" height="16">
+        </span>
+        <input type="text" class="form-control" placeholder="Trabajo a buscar" aria-label="Trabajo a buscar" aria-describedby="basic-addon1">
+        &nbsp;&nbsp;&nbsp;<button class="btn btn-outline-primary" type="button" id="button-addon2">Buscar</button>
+    </div>
+
+    <hr>
+
+    <h5>Historial :</h5>
+
+
+
+</header>
+<body>
+
+    @*<br>
+        <div class="text-center">
+            <h2>Últimas publicaciones</h2>
+        </div>
+
+        List <Oferta> listado = () AQUÍ LLAMAR AL SQL*
+        <br>
+        <p>Estas son las últimas publicaciones de ofertas laborales en el portal de "Tu Nuevo Trabajo".</p>
+        <br>*@
+
+    <div class="form-row">
+
+        <div class="form-group col-md-8">
+
+            <table class="table table-dark ">
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PuestoOferta)
+                        </td>
+                        <td class="align-middle">
+                            @Html.DisplayFor(modelItem => item.FechaInicio)
+                        </td>
+                        <td class="align-middle">
+                            @Html.DisplayFor(modelItem => item.IdUsuarioNavigation.Username)
+                        </td>
+                        @*<td>
+            @Html.DisplayFor(modelItem => item.TipoContrato)
+        </td>*@
+                        <td>
+                            @*<a asp-action="Edit" asp-route-id="@item.IdOferta">Editar</a> |*@
+                            @*<a asp-action="Details" asp-route-id="@item.IdOferta">BORRAR</a>*@
+                            <a asp-action="Delete" asp-route-id="@item.IdOferta">Borrar</a>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="form-group col-md-4">
+            <img src="https://i.ibb.co/CMnr32w/images.jpg" class="img-fluid"
+                 alt="example placeholder" width="250" height="250">
+        </div>
+    </div>
+
+
+</body>
