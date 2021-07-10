@@ -68,13 +68,13 @@
                 <input asp-for="EstadoOferta" class="form-control" />
                 <span asp-validation-for="EstadoOferta" class="text-danger"></span>
             </div>
+            <br>
+            <br>
             <!-- BOTON PARA VENTANA EMERGENTE -->
 
-            <div class="text-center">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-                    GUARDAR
-                </button>
-            </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                GUARDAR
+            </button>
 
             <!-- VENTANA EMERGENTE -->
             <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -99,13 +99,16 @@
                     </div>
                 </div>
             </div>
+
+            <button type="button" class="btn btn-danger" id="btnGuardarCancelar" onclick="location='/Empresa/OfertaLaboral'">Cancelar</button>
+
+            <br>
+            <br>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

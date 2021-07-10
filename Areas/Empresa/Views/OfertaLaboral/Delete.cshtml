@@ -81,11 +81,9 @@
         <input type="hidden" asp-for="IdOferta" />
         <!-- BOTON PARA VENTANA EMERGENTE -->
 
-        <div class="text-center">
-            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
-                ELIMINAR
-            </button>
-        </div>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
+          ELIMINAR
+        </button>
 
         <!-- VENTANA EMERGENTE -->
         <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -104,12 +102,16 @@
                     </div>
                     <div class="text-center">
                         <button type="button" class="btn btn-success" data-dismiss="modal" onclick="location='/Empresa/OfertaLaboral'">ACEPTAR</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="location='/Empresa/OfertaLaboral'">CANCELAR</button>
                     </div>
                     <br>
                     <br>
                 </div>
             </div>
-        </div> 
+        </div>
+
+        <button type="button" class="btn btn-primary" id="btnGuardarCancelar" onclick="location='/Empresa/OfertaLaboral'">Cancelar</button>
+
     </form>
 </div>
 
