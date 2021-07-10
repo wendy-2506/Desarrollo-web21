@@ -19,8 +19,7 @@
             <span class="input-group-text" id="basic-addon1">
                 <img src="~/imagenes/search.svg" width="16" height="16">
             </span>
-            <input type="text" class="form-control" placeholder="Nombre de postulante" aria-label="Nombre de postulante" aria-describedby="basic-addon1">
-            &nbsp;&nbsp;&nbsp;<button class="btn btn-outline-primary" type="button" id="button-addon2">Buscar</button>
+            <input type="text" class="form-control" placeholder="Nombre de postulante" aria-label="Nombre de postulante" aria-describedby="basic-addon1">            
         </div>
 
         <div class="form-group col-md-3">
@@ -45,23 +44,24 @@
             <label for="inputFecha">Fecha Inicio</label><input type="date" class="form-control" id="inputFechaInicio">
         </div>
         <div class="form-group col-md-3">
-            <label for="inputFecha">Fecha Fin</label>
-            <input type="date" class="form-control" id="inputFechaFin">
+            <label for="inputFecha">Fecha Fin</label> &nbsp; <input type="date" class="form-control" id="inputFechaFin">
         </div>
 
-    </div>
-    
-    <table id="tbListadoReportes" class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">Nombre</th>
-                <th scope="col">DNI/RUC</th>
-                <th scope="col">Fecha</th>
-                <th scope="col">Correo</th>
-                <th scope="col">Telefono</th>
-            </tr>
-        </thead>
-    </table>
+        <div class="form-group col-md-3 mx-auto">            
+            <button class="btn btn-primary" type="button" id="button-addon2">Buscar</button>
+        </div>
+
+        <table id="tbListadoReportes" class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">DNI/RUC</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Telefono</th>
+                </tr>
+            </thead>
+        </table>
 
 </form>
 
