@@ -1,4 +1,7 @@
-﻿
+﻿@{
+    ViewData["Title"] = "Editar Perfil";
+}
+
 <div class="btn-group btn-lg btn-block" role="group" aria-label="Basic example">
     <button type="button" class="btn btn-outline-primary" onclick="location='/Empresa/Publicaciones'">Publicaciones</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Empresa/OfertaLaboral'">Mis ofertas Publicadas</button>
@@ -9,9 +12,6 @@
     <button type="button" class="btn btn-success" id="btnGuardarCambios">Guardar Cambios</button>
     <button type="button" class="btn btn-danger" id="btnGuardarCancelar" onclick="location='/Empresa/Perfil'">Cancelar</button>
 </div>
-<br>
-<br>
-<br>
 
 <form>
     <div class="form-row">
@@ -21,15 +21,14 @@
         </div>
 
         <div class="form-group col-md-6">
-            <label for="inputNombre">NOMBRE</label>
+            <label for="inputNombre">Nombre</label>
             <input type="text" class="form-control" id="inputNombre">
-            <label for="inputRazon">RAZON SOCIAL</label>
+            <label for="inputRazon">Razón Social</label>
             <input type="text" class="form-control" id="inputRazon">
             <label for="inputRUC">RUC</label>
             <input type="text" class="form-control" id="inputRUC">
-            <label for="inputDirec">DIRECCIÓN</label>
+            <label for="inputDirec">Dirección</label>
             <input type="text" class="form-control" id="inputDirec">
-
         </div>
 
     </div>
@@ -39,7 +38,7 @@
 
         </div>
         <div class="form-group col-md-6">
-            <label for="inputEmail4">DESCRIPCIÓN</label>
+            <label for="inputEmail4">Descripción</label>
             <textarea class="form-control" aria-label="With textarea"></textarea>
         </div>
         <br>

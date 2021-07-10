@@ -1,5 +1,6 @@
-﻿
-<!-- ESTA ES AREA DE LA EMPRESA PERFIL -->
+﻿@{
+    ViewData["Title"] = "Mi Perfil";
+}
 
 <div class="btn-group btn-lg btn-block" role="group" aria-label="Basic example">
     <button type="button" class="btn btn-outline-primary" onclick="location='/Empresa/Publicaciones'">Publicaciones</button>
@@ -8,7 +9,7 @@
 </div>
 
 @*<button type="button" class="btn btn-link" style="float: right;">DESACTIVAR CUENTA</button>*@
-<button type="button" class="btn btn-link" style="float: right;" onclick="location='/Empresa/Perfil/Editar'">EDITAR PERFIL</button>
+<button type="button" class="btn btn-link" style="float: right;" onclick="location='/Empresa/Perfil/Editar'">Editar mi perfil</button>
 
 <br>
 <br>
@@ -22,15 +23,14 @@
         </div>
 
         <div class="form-group col-md-6">
-            <label for="inputNombre">NOMBRE</label>
-            <input type="text" readonly="readonly" class="form-control" id="inputNombre">
-            <label for="inputRazon">RAZON SOCIAL</label>
-            <input type="text" readonly="readonly" class="form-control" id="inputRazon">
+            <label for="inputNombre">Nombre</label>
+            <input type="text" class="form-control" id="inputNombre">
+            <label for="inputRazon">Razón Social</label>
+            <input type="text" class="form-control" id="inputRazon">
             <label for="inputRUC">RUC</label>
-            <input type="text" readonly="readonly" class="form-control" id="inputRUC">
-            <label for="inputDirec">DIRECCIÓN</label>
-            <input type="text" readonly="readonly" class="form-control" id="inputDirec">
-
+            <input type="text" class="form-control" id="inputRUC">
+            <label for="inputDirec">Dirección</label>
+            <input type="text" class="form-control" id="inputDirec">
         </div>
 
     </div>
@@ -40,14 +40,14 @@
 
         </div>
         <div class="form-group col-md-6">
-            <label for="inputEmail4">DESCRIPCIÓN</label>
-            <textarea readonly="readonly" class="form-control" aria-label="With textarea"></textarea>
+            <label for="inputEmail4">Descripción</label>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
         </div>
         <br>
     </div>
 </form>
 
-<button type="button" class="btn btn-link" style="float: right;" onclick="location='/Empresa/Sugerencia'">ENVIAR SUGERENCIA</button>
+<button type="button" class="btn btn-link" style="float: right;" onclick="location='/Empresa/Sugerencia'">Enviar Sugerencia</button>
 
 <br>
 <br>
