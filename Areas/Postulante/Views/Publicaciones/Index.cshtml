@@ -1,4 +1,7 @@
-﻿<h1>ESTA ES AREA DE POSTULANTE PUBLICACIONES</h1>
+﻿@model IEnumerable<Tu_Nuevo_Trabajo2021.Models.OfertaLaboral>
+@{
+    ViewData["Title"] = "Publicaciones";
+}
 
 <div class="btn-group btn-lg btn-block" role="group" aria-label="Basic example">
     <button type="button" class="btn btn-outline-primary active">Publicaciones</button>
@@ -6,118 +9,49 @@
     <button type="button" class="btn btn-outline-primary" onclick="location='/Postulante/Perfil'">Mi perfil</button>
 </div>
 
-
-
-@*{
-        ViewData["Title"] = "Home Page";
-    }
-    <header>
-    </header>
-    <body>
-        <br>
-        <div class="text-center">
-            <h2>Últimas publicaciones</h2>
-        </div>
-
-
-        <br>
-        <p>Estas son las últimas publicaciones de ofertas laborales en el portal de "Tu Nuevo Trabajo"</p>
-        <br>
-
-
-        <table class="table-secondary table-borderless table align-middle">
-            <tbody>
-                <tr>
-                    <td class="align-middle">Practicante TI</td>
-                    <td class="align-middle">10/04/2021</td>
-                    <td class="align-middle">Corporación Educativa se encuentra en la búsqueda de personal altamente calificado para el puesto de Practicante Pre-Profesional Seguridad TI</td>
-                    <td class="align-middle">Practicas Preprofesionales</td>
-                </tr>
-
-                <tr>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>This cell is aligned to the top.</td>
-                    <td>...</td>
-                </tr>
-            </tbody>
-
-        </table>
-
-
-    </body>*@
-@model IEnumerable<Tu_Nuevo_Trabajo2021.Models.OfertaLaboral>
-@{
-    ViewData["Title"] = "Home Page";
-}
-
 <header>
-    @*<nav class="navbar navbar-dark bg-dark">
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </nav>*@
-    <div class="input-group w-70">
+
+    <div class="input-group w-50">
         <span class="input-group-text" id="basic-addon1">
             <img src="~/imagenes/search.svg" width="16" height="16">
         </span>
         <input type="text" class="form-control" placeholder="Trabajo a buscar" aria-label="Trabajo a buscar" aria-describedby="basic-addon1">
-        &nbsp;&nbsp;&nbsp;<button class="btn btn-outline-primary" type="button" id="button-addon2">Buscar</button>
+        &nbsp;&nbsp;&nbsp;<button class="btn btn-primary" type="button" id="button-addon2">Buscar</button>
     </div>
-    <hr>
-
+    <br>
 </header>
+
 <body>
-
-    @*<br>
-        <div class="text-center">
-            <h2>Últimas publicaciones</h2>
-        </div>
-
-        List <Oferta> listado = () AQUÍ LLAMAR AL SQL*
-        <br>
-        <p>Estas son las últimas publicaciones de ofertas laborales en el portal de "Tu Nuevo Trabajo".</p>
-        <br>*@
-
-    <div class="form-row">
-        <div class="form-group col-md-2">
-            <img src="https://i.ibb.co/nfpYkMw/pe-interbank.png" class="img-fluid"
-                 alt="example placeholder" width="140" height="140">
-        </div>
-        <div class="form-group col-md-10">
+       
+    <div class="form-row">    
 
             <table class="table table-striped ">
                 <tbody>
-                    @foreach (var item in Model)
-                    {
-                    <tr>
-                        @*<td class="align-middle">
-            @Html.DisplayFor(modelItem => item.FechaInicio)
-        </td>*@
-                        <td>
-                            @Html.DisplayFor(modelItem => item.PuestoOferta)
-                        </td>
-                        <td class="align-middle">
-                            @Html.DisplayFor(modelItem => item.Descripcion)
-                        </td>
-                        @*<td>
-            @Html.DisplayFor(modelItem => item.TipoContrato)
-        </td>*@
-                        <td>
-                            @*<a asp-action="Edit" asp-route-id="@item.IdOferta">Editar</a> |*@
-                            <a asp-action="Details" asp-route-id="@item.IdOferta">VER OFERTA</a> 
-                            @*<a asp-action="Delete" asp-route-id="@item.IdOferta">Borrar</a>*@
-                        </td>
-                    </tr>
+                    @foreach (var item in Model){
+                        <tr>
+                            @*<td class="align-middle">
+                                    @Html.DisplayFor(modelItem => item.FechaInicio)
+                                </td>*@
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PuestoOferta)
+                            </td>
+                            <td class="align-middle">
+                                @Html.DisplayFor(modelItem => item.Descripcion)
+                            </td>
+                            @*<td>
+                                    @Html.DisplayFor(modelItem => item.TipoContrato)
+                                </td>*@
+                            <td>
+                                @*<a asp-action="Edit" asp-route-id="@item.IdOferta">Editar</a> |*@
+                                <a asp-action="Details" asp-route-id="@item.IdOferta">Ver Oferta</a>
+                                @*<a asp-action="Delete" asp-route-id="@item.IdOferta">Borrar</a>*@
+                            </td>
+                        </tr>
                     }
                 </tbody>
-            </table>
-        </div>
+            </table>        
     </div>
-
 
 </body>
 
-
-
+<br>
