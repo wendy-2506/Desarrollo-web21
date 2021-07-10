@@ -10,38 +10,21 @@
 </div>
 
 <header>
-    @*<nav class="navbar navbar-dark bg-dark">
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </nav>*@
-    <div class="input-group w-70">
+
+    <div class="input-group w-50">
         <span class="input-group-text" id="basic-addon1">
             <img src="~/imagenes/search.svg" width="16" height="16">
         </span>
         <input type="text" class="form-control" placeholder="Trabajo a buscar" aria-label="Trabajo a buscar" aria-describedby="basic-addon1">
-        &nbsp;&nbsp;&nbsp;<button class="btn btn-outline-primary" type="button" id="button-addon2">Buscar</button>
+        &nbsp;&nbsp;&nbsp;<button class="btn btn-primary" type="button" id="button-addon2">Buscar</button>
     </div>
 
     <hr>
 
     <h5>Historial :</h5>
 
-
-
 </header>
 <body>
-
-    @*<br>
-        <div class="text-center">
-            <h2>Últimas publicaciones</h2>
-        </div>
-
-        List <Oferta> listado = () AQUÍ LLAMAR AL SQL*
-        <br>
-        <p>Estas son las últimas publicaciones de ofertas laborales en el portal de "Tu Nuevo Trabajo".</p>
-        <br>*@
 
     <div class="form-row">
 
@@ -68,7 +51,13 @@
                             <td>
                                 @*<a asp-action="Edit" asp-route-id="@item.IdOferta">Editar</a> |*@
                                 @*<a asp-action="Details" asp-route-id="@item.IdOferta">BORRAR</a>*@
-                                <a asp-action="Delete" asp-route-id="@item.IdOferta">Borrar</a>
+                                <a asp-action="Delete" asp-route-id="@item.IdOferta">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"></path>
+  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"></path>
+</svg>
+                                    @*<img src="~/imagenes/trash.svg" width="16" height="16" fill="currentColor">*@
+                                </a>
 
                             </td>
                         </tr>
