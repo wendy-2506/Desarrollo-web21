@@ -5,17 +5,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\Administrador\Views\Home\**" />
     <Compile Remove="Areas\Empresa\Views\NewFolder\**" />
     <Compile Remove="Areas\Postulante\Views\NewFolder\**" />
+    <Content Remove="Areas\Administrador\Views\Home\**" />
     <Content Remove="Areas\Empresa\Views\NewFolder\**" />
     <Content Remove="Areas\Postulante\Views\NewFolder\**" />
+    <EmbeddedResource Remove="Areas\Administrador\Views\Home\**" />
     <EmbeddedResource Remove="Areas\Empresa\Views\NewFolder\**" />
     <EmbeddedResource Remove="Areas\Postulante\Views\NewFolder\**" />
+    <None Remove="Areas\Administrador\Views\Home\**" />
     <None Remove="Areas\Empresa\Views\NewFolder\**" />
     <None Remove="Areas\Postulante\Views\NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\Administrador\Controllers\HomeController.cs" />
     <Compile Remove="Models\Oferta.cs" />
   </ItemGroup>
 
@@ -32,7 +37,6 @@
   <ItemGroup>
     <Folder Include="Areas\Administrador\Data\" />
     <Folder Include="Areas\Administrador\Models\" />
-    <Folder Include="Areas\Administrador\Views\NewFolder\" />
     <Folder Include="Areas\Empresa\Data\" />
     <Folder Include="Areas\Empresa\Models\" />
     <Folder Include="Areas\LOGIN2\Data\" />

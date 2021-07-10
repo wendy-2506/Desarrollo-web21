@@ -1,19 +1,19 @@
 ﻿@model IEnumerable<Tu_Nuevo_Trabajo2021.Models.OfertaLaboral>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Mis Ofertas Publicadas";
 }
 
-<h1>ESTA ES AREA DE LA EMPRESA OFERTAS</h1>
 <div class="btn-group btn-lg btn-block" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-outline-primary " onclick="location='/Empresa/Publicaciones'">Publicaciones</button>
-    <button type="button" class="btn btn-outline-primary active" onclick="location='/Empresa/OfertaLaboral'">Mis ofertas Publicadas</button>
-    <button type="button" class="btn btn-outline-primary " onclick="location='/Empresa/Perfil'">Mi perfil</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Empresa/Publicaciones'">Publicaciones</button>
+    <button type="button" class="btn btn-outline-primary active">Mis ofertas Publicadas</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Empresa/Perfil'">Mi perfil</button>
 </div>
-<hr>
-@*<p>
-    <a asp-action="Create">Create New</a>
-</p>*@
+
+<button type="button" class="btn btn-info">Crear Oferta Laboral Nueva</button>
+
+<br><br/>
+
 <table class="table table-dark">
     <thead>
         <tr>

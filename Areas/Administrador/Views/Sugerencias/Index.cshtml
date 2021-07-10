@@ -1,37 +1,34 @@
 ﻿@{
-    ViewData["Title"] = "Lista Usuarios Empresa";
+    ViewData["Title"] = "Lista Sugerencias";
 }
 
 <div class="btn-group btn-lg btn-block" role="group" aria-label="Basic example">
     <button type="button" class="btn btn-outline-primary " onclick="location='/Administrador/Perfil'">Mi Perfil</button>
-    <button type="button" class="btn btn-outline-primary active">Usuarios</button>
+    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Usuarios_Empresas'">Usuarios</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Ofertas_Publicadas'">Ofertas Publicadas</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Postulaciones'">Postulaciones</button>
     <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Reportes'">Reportes</button>
-    <button type="button" class="btn btn-outline-primary" onclick="location='/Administrador/Sugerencias'">Sugerencias</button>
+    <button type="button" class="btn btn-outline-primary active">Sugerencias</button>
 </div>
 
 <br>
 <br>
 
-<div class="text-left">
-    <div class="btn-group btn-group-toggle" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary active">Empresas</button>
-        <button type="button" class="btn btn-primary" onclick="location='/Administrador/Usuarios_Postulantes'">Postulantes</button>
-    </div>
+<div class="form-group input-group w-25">
+    <select class="custom-select" id="inputGroupSelect01">
+        <option selected>Elegir Usuario...</option>
+        <option value="1">Empresas</option>
+        <option value="2">Postulante</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;<button class="btn btn-primary" type="button" id="button-addon2">Buscar</button>
 </div>
 
-<br>
-
-<table id="tbListadoEmpresa" class="table table-striped">
+<table id="tbListadoSugerencias" class="table table-striped">
     <thead>
         <tr>
-            <th scope="col">Nombre</th>
-            <th scope="col">Razon Social</th>
-            <th scope="col">RUC</th>
-            <th scope="col">Dirección</th>
-            <th scope="col">Correo</th>
-            <th scope="col">Telefono</th>
+            <th scope="col">Nombre Usuario</th>
+            <th scope="col">Título Sugerencia</th>
+            <th scope="col">Descripción</th>
         </tr>
     </thead>
 </table>
@@ -39,7 +36,7 @@
     <script>
         loadTable();
         function loadTable() {
-            let table = $("#tbListadoPostulante").DataTable({
+            let table = $("#tbListadoSugerencias").DataTable({
                 lengthChange: false,
                 buttons: ['copy', 'excel', 'pdf', 'colvis', 'print']
             });
