@@ -1,9 +1,8 @@
 ﻿@model IEnumerable<Tu_Nuevo_Trabajo2021.Models.OfertaLaboral>
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Index";
 }
-<header>
-</header>
+
 <body>
     <br>
     <div class="text-center">
@@ -15,8 +14,7 @@
     <p>Estas son las últimas publicaciones de ofertas laborales en el portal de "Tu Nuevo Trabajo".</p>
     <br>
 
-
-    <table class="table-secondary table-borderless table align-middle">
+    <table class="table table-striped">
         <tbody>
             @foreach (var item in Model) {             
             <tr>
