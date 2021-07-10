@@ -15,6 +15,7 @@
 
     </div>
 
+
     <div class="form-row">
         <div class="form-group col-md-3">
 
@@ -27,9 +28,36 @@
 
 </form>
 
-<div class="row justify-content-center">
-    <button type="submit" class="btn btn-success">ENVIAR</button>&nbsp;&nbsp;&nbsp;&nbsp;
-    <button type="submit" class="btn btn-danger" onclick="location='/Empresa/Perfil'">CANCELAR</button>
+<!-- BOTON PARA VENTANA EMERGENTE -->
+
+<div class="text-center">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+        ENVIAR SUGERENCIA
+    </button>
+</div>
+
+<!-- VENTANA EMERGENTE -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="text-center">
+                <div class="modal-body">
+                    Sugerencia Enviada
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="location=location='/Empresa/Perfil'">OK</button>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
 </div>
 
 <br>
