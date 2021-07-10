@@ -25,7 +25,7 @@ namespace Tu_Nuevo_Trabajo2021.Areas.LOGIN2.Controllers
             if (email == "omartel@esan.edu.pe" && password == "aprobar123")
                 
             {
-                return RedirectToAction("Index", "Home", new { area = "Postulante" });
+                return RedirectToAction("Index", "Publicaciones", new { area = "Postulante" });
             }
             if (email == "wmendoza@esan.edu.pe" && password == "hola123")
             {
