@@ -1,5 +1,6 @@
-﻿<!-- Sugerencia Postulante -->
-
+﻿@{
+    ViewData["Title"] = "Sugerencias";
+}
 <form>
 
     <div class="form-row">
@@ -8,7 +9,7 @@
         </div>
 
         <div class="form-group col-md-6">
-            <label for="inputTituloSuge">TITULO DE LA SUGERENCIA </label>
+            <label for="inputTituloSuge">Título de la Sugerencia</label>
             <input type="text" class="form-control" id="inputTituloSuge">
 
         </div>
@@ -21,7 +22,7 @@
 
         </div>
         <div class="form-group col-md-6">
-            <label for="inputEmail4">DESCRIPCIÓN</label>
+            <label for="inputEmail4">Descripción</label>
             <textarea class="form-control" aria-label="With textarea" rows="10" cols="40"></textarea>
         </div>
     </div>
@@ -31,8 +32,8 @@
 <!-- BOTON PARA VENTANA EMERGENTE -->
 
 <div class="text-center">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-        ENVIAR SUGERENCIA
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticBackdrop">
+        Enviar Sugerencia
     </button>
 </div>
 
@@ -48,11 +49,11 @@
             </div>
             <div class="text-center">
                 <div class="modal-body">
-                    Sugerencia Enviada
+                    Sugerencia Enviada. Muchas gracias.
                 </div>
             </div>
             <div class="text-center">
-                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="location='/Postulante/Perfil'">ACEPTAR</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="location='/Postulante/Perfil'">Aceptar</button>
             </div>
             <br>
             <br>

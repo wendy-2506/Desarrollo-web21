@@ -1,13 +1,13 @@
 ﻿@model Tu_Nuevo_Trabajo2021.Models.OfertaLaboral
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalles de Oferta";
 }
 
 <h1>Detalles</h1>
 
 <div>
-    <h4>OfertaLaboral</h4>
+    <h4>Oferta Laboral</h4>
     <hr />
     <dl class="row row-striped">
         <dt class = "col-sm-2">
@@ -67,9 +67,9 @@
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.EstadoOferta)
         </dt>
-        <dd class = "col-sm-10">
+        @*<dd class = "col-sm-10">
             @Html.DisplayFor(model => model.EstadoOferta)
-        </dd>
+        </dd>*@
         <dt class = "col-sm-2">
             <h7>Curriculum Vitae</h7>
         </dt>
@@ -83,6 +83,8 @@
 <div>
     @*< asap-action="Edit" asp-route-id="@Model.IdOferta">Edit</a> |
         <a asp-action="Index">Atrás</a>*@
-    <button type="submit" class="btn btn-danger" onclick="location='/Empresa/OfertaLaboral'">ATRAS</button>
+    <button type="submit" class="btn btn-danger" onclick="location='/Empresa/OfertaLaboral'">Regresar</button>
 
 </div>
+
+<br>
